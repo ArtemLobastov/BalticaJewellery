@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333; /* цвет шрифта */
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0%;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* FIRST BLOCK */
+.intro {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+    width: 100%;
+    height: 85vh;
+    background: url(/baltica/content/intro2.webp)  no-repeat;
+    -webkit-background-size: cover;
+    background-size: auto;
+    background-position: bottom;
+}
+
+.intro_title{
+    display: flex;
+  margin-top: 15%;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight:600;
+    line-height: 1.3;
+    
+    color: #ffffff;
+}
+
+.intro_sub_title{
+    padding-top:  50px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.3;
+    
+    color: #ffffff;   
+    margin-bottom: 50px;   
+}
+.button_catalog{
+    display: flex
+    vertical-align top;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    padding: 15px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.2s linear, color 0.2s linear}
+
+.button_catalog:hover{
+    background:#fff;
+    color: #333;
+    border: 1px solid #333;
+}
+.button_arrow{
+    display: flex;
+    justify-content: center
+}
+.arrow {
+display: flex;
+height: 50px;
+margin-top: 80px;
+animation: shake .7s linear alternate infinite;
+}
+
+
+@keyframes shake {
+  100% {
+    transform: translatey(-30px);    
+  }
+}
+
+
+/* HEADER */
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 8vh;
+  width: 30%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+    background: url(/baltica/content/logo\ black.png)  no-repeat;
+background-size: contain;
+}
+
+.logo_link{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav_link{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 25px;
+    color: black;
+    text-decoration: none;
+transition: color .2s linear;
+}
+
+.nav_link::after{
+content: "";
+display: block;
+width: 100%;
+height: 2px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+top: 100%;
+left: 0%;
+z-index: 1;
+opacity: 0;
+transition: opacity .2s linear;
+
+}
+
+.nav_link:hover{
+color: rgb(84, 83, 83);
+}
+
+.nav_link:hover:after{
+    opacity: 1;
+}
+    
+  /* ABOUT PAGE */  
+    .About {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        width: 100%;
+        background: #fff;
+        
+    }
+
+    .container_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 70%;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+    
+    .About_title{
+        padding-top:  30px;
+        font-size: 80px;
+        text-transform: uppercase;
+        font-weight:600;
+        line-height: 1.3;
+        
+        color: #333;
+    }
+    
+    .About_sub_title{
+        padding-top:  50px;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.3;
+        color: #333;   
+        margin-bottom: 50px;   
+    }
+    .button_catalog_about{
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #333;
+        margin-top: 20px;
+        padding: 15px;
+        color: #333;;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background 0.2s linear, color 0.2s linear}
+    
+    .button_catalog_about:hover{
+        background:#333;
+        color: #fff;
+        border: 1px solid #333;
+        
+    }
+    
+    .about_img {
+        height: 60%;
+        width: 60%;
+    }
