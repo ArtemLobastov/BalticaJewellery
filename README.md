@@ -1,2 +1,2 @@
 # BalticaJewellery
-Website for jewellery factory
+Website and online catalogue for jewellery factory
